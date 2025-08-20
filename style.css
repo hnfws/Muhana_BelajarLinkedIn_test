@@ -400,6 +400,13 @@ nav a:hover {
         margin-left: 0;
         margin-top: 50px;
     }
+    
+    .big-title {
+        margin-top: 50px;
+    }
+    .about-block-two {
+        margin-left: 0;
+    }
 }
 /* testimonial */
 .box {
@@ -682,3 +689,4 @@ nav a:hover {
     object-fit: cover;
     display: block;
 }
+
