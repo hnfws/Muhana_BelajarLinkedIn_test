@@ -55,4 +55,5 @@ Direktori proyek ini mencakup file-file berikut:
 
 ## Demo 
 Untuk melihat demo langsung dari proyek ini, Anda dapat mengunjungi link berikut:
+https://muhana-belajar-linked-in-test-eq7p.vercel.app/
 
