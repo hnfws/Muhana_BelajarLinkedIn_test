@@ -53,6 +53,8 @@ Direktori proyek ini mencakup file-file berikut:
 3. Jalankan secara lokal, buka file index.html di browser pilihan Anda.
 4. Semua sumber daya (CSS, JS, gambar) sudah terhubung di dalam file HTML, jadi tidak diperlukan pengaturan lebih lanjut.
 
+**Untuk menjalankan projek ini harus disertakan koneksi internet**
+
 ## Demo 
 Untuk melihat demo langsung dari proyek ini, Anda dapat mengunjungi link berikut:
 https://muhana-belajar-linked-in-test-eq7p.vercel.app/
