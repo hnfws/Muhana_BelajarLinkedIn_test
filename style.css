@@ -1,0 +1,684 @@
+body {
+    font-family: "poppins", sans-serif;
+    background-color: #eff6f3;
+}
+nav {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: fixed;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    font-size: 16px;
+    padding: 10px 15px;
+}
+nav a:hover {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.navbar-nav .nav-link.active {
+    border-bottom: 5px solid #007bff;
+    transition: border-bottom 0.3s ease;
+    border-radius: 0 0 25px 25px 0;
+    font-weight: 700;
+}
+.stats {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+    color: white;
+    background-color: #b1d4cb;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timer {
+    font-size: 50px;
+    font-weight: bold;
+    color: #3d636f;
+}
+
+.history-area {
+    margin-top: 50px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.history-text-left {
+    position: relative;
+    float: left;
+    padding-right: 45px;
+    margin-right: 45px;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+.history-text-left:before {
+    position: absolute;
+    right: 0px;
+    top: -25px;
+    width: 1px;
+    height: 140px;
+    content: "";
+    background: #e5e5e5;
+}
+.history-text-left h3 {
+    font-size: 35px;
+    color: #222222;
+    line-height: 45px;
+    font-weight: 700;
+    margin: 0;
+}
+.history-text-left span {
+    font-size: 35px;
+    color: #222222;
+    line-height: 45px;
+    font-weight: 300;
+    font-family: "Ubuntu", sans-serif;
+}
+.history-text-left h3 {
+    font-size: 35px;
+    color: #7fd4a8;
+    line-height: 45px;
+    font-family: "Ubuntu", sans-serif;
+}
+.history-text-right p {
+    font-size: 14px;
+    color: #888888;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+//about 1
+
+.what-we-do {
+    margin-top: 20px;
+}
+.what-we-do .text p {
+    line-height: 29px;
+}
+
+.about-block-one-area {
+    position: relative;
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+.about-block-one {
+    position: relative;
+}
+
+.about-block-one .inner-box {
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.about-block-one .inner-box .image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.about-block-one .inner-box .image img {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.about-block-one .inner-box .caption {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(21, 66, 109, 0.6);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.about-block-one:hover .inner-box .caption {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.about-block-one .icon-box {
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.about-block-one h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.about-block-one .inner-box .overlay-box {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(-90deg);
+    -ms-transform: perspective(400px) rotateX(-90deg);
+    transform: perspective(400px) rotateX(-90deg);
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color: rgba(127, 212, 168, 0.84);
+}
+
+.about-block-one .inner-box:hover .overlay-box {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    -ms-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+}
+
+.about-block-one .inner-box .overlay-box .overlay-inner {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: table;
+    text-align: center;
+    padding: 10px 30px;
+    vertical-align: middle;
+}
+
+.about-block-one .inner-box .overlay-box .overlay-inner .content {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.about-block-one .inner-box .overlay-box h2 {
+    position: relative;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.about-block-one .inner-box .overlay-box h2 a {
+    position: relative;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.about-block-one .inner-box .overlay-box h2 a:hover {
+    color: rgba(23, 182, 230, 0.8);
+}
+
+.about-block-one .inner-box .overlay-box .text {
+    position: relative;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.9em;
+    margin-bottom: 25px;
+}
+
+.about-block-one .inner-box .overlay-box .read-more {
+    position: relative;
+    background: #fff;
+    color: #222;
+    font-weight: 600;
+    padding: 11px 18px;
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-block-one .inner-box .overlay-box .read-more:hover {
+    color: rgba(21, 66, 109, 0.67);
+}
+
+//benefit
+.why-chooseus .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about-block-two-area .outer-box {
+    position: relative;
+}
+
+.about-block-two {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.about-block-two:last-child {
+    margin-bottom: 0px;
+}
+
+.about-block-two .inner-box {
+    position: relative;
+    padding-left: 130px;
+    min-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about-block-two .inner-box .icon-box {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    background-color: #7fd4a8;
+
+    width: 110px;
+    height: 110px;
+    color: rgba(21, 66, 109, 0.67);
+    font-size: 50px;
+    line-height: 110px;
+    text-align: center;
+    overflow: hidden;
+    -webkit-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+    transition: 0.8s ease;
+}
+
+.about-block-two .inner-box .icon-box:before {
+    position: absolute;
+    content: "";
+    background-color: rgba(21, 66, 109, 0.67);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.about-block-two .inner-box:hover .icon-box:before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.about-block-two .inner-box:hover .icon-box {
+    color: #fff;
+}
+
+.about-block-two .inner-box .icon-box span {
+    position: relative;
+    display: block;
+}
+
+.about-block-two .inner-box h4 {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 12px;
+    padding-top: 10px;
+}
+
+.about-block-two .inner-box h4 a {
+    color: #333333;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+}
+
+.about-block-two .inner-box h4 a:hover {
+    color: rgba(21, 66, 109, 0.67);
+}
+
+.about-block-two .inner-box .bbenefit-text {
+    font-size: 15px;
+    color: #777777;
+    padding-bottom: 12px;
+}
+.dynamicContent {
+    margin-left: -150px;
+    margin-top: 50px;
+}
+
+.dynamicContent h2 {
+    color: #15436d;
+}
+
+.big-title {
+    color: #15436d;
+}
+
+@media (max-width: 768px) {
+    .dynamicContent {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}
+/* testimonial */
+.box {
+    width: 100%;
+    height: 200px;
+    background-color: #f1f1f1;
+    position: relative;
+    display: flex;
+    color: #7fd4a8;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-image: url("image/schoolgirl-using-app-for-studying-2025-02-11-12-57-16-utc.jpg");
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7);
+}
+
+.box .content {
+    z-index: 10;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(21, 66, 109, 0.61);
+    z-index: 1;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #56c588;
+}
+
+.testimonials-section-two {
+    margin: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.testimonials-section-two .sec-title-two {
+    margin-bottom: 80px;
+}
+.testimonial-area-two {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+.testimonial-item-one .image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.image figure {
+    display: inline-block;
+    margin: 0;
+}
+
+.image figure img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.testimonial-item-one img {
+    display: inline-block;
+    transform: scale(1);
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+.testimonial-item-one:hover img {
+    transform: scale(1.1);
+    transition: all 500ms ease;
+}
+
+.testimonial-item-one h6 {
+    font-size: 20px;
+    color: #333333;
+    line-height: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.testimonial-item-one span {
+    font-size: 14px;
+    color: #a4a3a3;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: "Ubuntu", sans-serif;
+}
+.testimonial-item-one .text-area {
+    position: relative;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 50px 25px 20px;
+    border: 1px solid #f2f2f2;
+    transition: all 500ms ease;
+}
+.testimonial-item-one:hover .text-area {
+    border-color: #15436d;
+}
+.testimonial-item-one .text-area span {
+    position: absolute;
+    top: -18px;
+    font-size: 80px;
+    color: #e8e8e8;
+    line-height: 80px;
+    display: inline-block;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    content: "";
+    margin-left: -25px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    transition: all 500ms ease;
+    font-family: "PT Sans", sans-serif;
+}
+.testimonial-item-one .text-area span:before {
+    position: absolute;
+    content: "";
+    background: #ffffff;
+    width: 47px;
+    height: 17px;
+    top: -1px;
+    left: 0px;
+    z-index: 99;
+    overflow-wrap: break-word;
+}
+.testimonial-item-one:hover .text-area span {
+    border-color: #15436d;
+}
+.testimonial-item-one p {
+    font-size: 14px;
+    color: #888888;
+    font-weight: 400;
+    line-height: 24px;
+    height: 63px;
+}
+.testimonial-item-one ul li {
+    display: inline-block;
+}
+.testimonial-item-one ul li i {
+    font-size: 14px;
+    color: #aaaaaa;
+    padding: 7px;
+    transition: all 500ms ease;
+}
+.testimonial-item-one ul li:hover i {
+    color: #56c588;
+    transition: all 500ms ease;
+}
+.stars {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.testimonial-item-one .image img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.stars .star {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+.hero {
+    position: relative;
+    background: url("image/male-executive-working-over-laptop-and-graphic-tab-2025-04-03-16-05-32-utc.jpg")
+        no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000af;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 66, 109, 0.7);
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#cta .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(21, 66, 109, 0.76);
+    z-index: 1;
+}
+
+#cta .col-lg-6 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.cta-text {
+    z-index: 2;
+    color: #56c588;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7);
+}
+
+.cta-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-text .btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7);
+    background-color: #56c588;
+}
+.cta-text .btn:hover {
+    background-color: #ffffffff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .cta-text h2 {
+        font-size: 2rem;
+    }
+
+    .cta-text p {
+        font-size: 1rem;
+    }
+}
+
+#cta .col-lg-6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
